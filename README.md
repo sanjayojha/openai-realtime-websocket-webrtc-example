@@ -99,6 +99,21 @@ Enabling and disabling VAD, along with its settings, plays a significant role in
 -   **Browser Compatibility:** Chrome is recommended for the best experience.
 -   **Audio Issues:** Ensure your microphone is properly connected and browser permissions are granted.
 
+## Web API used
+
+-   [mediaDevices API](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices)
+-   [MediaRecorder API](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder)
+-   [AudioContext API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
+-   [AudioWorkletProcessor](https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor)
+-   [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+-   [RTCPeerConnection](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection)
+
+## Help and Resources
+
+-   [OpenAI realtime documentation](https://platform.openai.com/docs/guides/realtime)
+-   [Realtime conversation guide](https://platform.openai.com/docs/guides/realtime-conversations)
+-   [OpenAI realtime API references](https://platform.openai.com/docs/api-reference/realtime-client-events/session)
+
 ## License
 
 This project is for demonstration purposes. Please review OpenAI's usage policies and terms of service before deploying to production.
