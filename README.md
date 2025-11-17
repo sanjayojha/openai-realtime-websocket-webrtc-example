@@ -1,8 +1,11 @@
 # OpenAI Realtime API Demonstration with WebSocket and WebRTC
 
-This repository contains two examples of connecting to the OpenAI Realtime API using WebSocket and WebRTC on the client side (browser). Both examples allow you to have voice conversations with an LLM about planning a Christmas party. The applications generate real-time transcriptions of both the AI's responses and your speech, which can be used for further processing in your application.
+This repository contains two examples of connecting to the OpenAI Realtime API using WebSocket and WebRTC on the client side (browser) without any SDK using Ephemeral authentication tokens. Both examples allow you to have voice conversations with an openAI LLM about planning a Christmas party. The applications generate real-time transcriptions of both the AI's responses and your speech, which can be used for further processing in your application.
 
-**Note:** We recommend using Chrome browser when testing these applications.
+**Note:**
+
+-   We recommend using Chrome browser when testing these applications.
+-   We have a similar example for the [Gemini Live API](https://github.com/sanjayojha/gemini-live-api-websocket-example "click"). This repository contains example of `WebSocket`. Gemini does not provide `webRTC` support as of now.
 
 ## Architecture
 
@@ -36,7 +39,7 @@ https://localhost/webrtc-chat.html
 
 ### Recording API
 
--   The JavaScript code uses the `MediaRecorder` Web API to record audio and video. You can completely remove this functionality if you don't need to record the user's video and audio.
+-   The JavaScript code uses the `MediaRecorder` Web API to record audio and video. You can completely remove this functionality if you don't need to record the user's video and audio. You can directly stream audio with litte modification of code.
 
 ### WebRTC Connection Methods
 
