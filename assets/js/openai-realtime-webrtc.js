@@ -90,7 +90,14 @@ export const webRtcConnection = async (stream, fullyLoadedCallback = null) => {
             const data = JSON.parse(event.data);
             console.log("Received response from WebRTC OpenAI connection:", data);
 
+            // when output_modalities: ["audio"] is set in initializeRealtime, handle audio response transcripts
             if (data.type === "response.output_audio_transcript.delta") {
+                const transcriptText = data.delta;
+                appendTranscriptText(transcriptText);
+            }
+
+            // when output_modalities: ["text"] is set in initializeRealtime, handle text responses
+            if (data.type === "response.output_text.delta") {
                 const transcriptText = data.delta;
                 appendTranscriptText(transcriptText);
             }
